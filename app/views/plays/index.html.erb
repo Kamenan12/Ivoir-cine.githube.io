@@ -1,3 +1,5 @@
-<h1>Page une</h1>
+<% @plays.each do |play| %>
+  <h2><%= link_to play.title, play_path(play) %></h2>
+<% end %>
 
-<button class="btn btn-primary">ok</button>
+<%= link_to "Ajout Play", new_play_path %>
