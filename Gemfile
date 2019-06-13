@@ -43,6 +43,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'simple_form'
+gem 'devise'
 ############################
 
 group :development, :test do
