@@ -1,6 +1,8 @@
 <h2><%= @play.title %></h2>
 <h3><%= @play.director %></h3>
-<h4><%= @play.category.name %></h4>
+<% if @play.category_id? %>
+  <h4><%= @play.category.name %></h4>
+<% end %>
 <p><%= @play.description %></p>
 
 <% if user_signed_in? %>
