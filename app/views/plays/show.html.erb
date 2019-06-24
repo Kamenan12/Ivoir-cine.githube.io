@@ -9,7 +9,7 @@
       <h4 class="play-director"><%= @play.category.name %></h4>
       <h4 class="avg-rating">Average Rating</h4>
       <span class="number-of-reviews"><em>From: </em><%= @play.reviews.count %> reviews</span>
-      <div class="average-review-rating" data-score=<%= @average_review %></div>
+      <div class="average-review-rating" data-score=<%= @average_review %>></div>
       <p class="play-desc"><%= @play.description %></p>
     </div>
   </div>
@@ -30,7 +30,7 @@
 <div class="links btn-group">
   <% if user_signed_in? %>
     <% if @play.user_id == current_user.id %>
-      <%= link_to "Edit", edit_play_path, class: 'btn btn-custom' %>
+      <%= link_to "Modifié", edit_play_path, class: 'btn btn-custom' %>
       <%= link_to "Delete", play_path(@play), class: 'btn btn-custom', method: :delete, data: {confirm: "Etre vous sur ?"} %>
     <% end %>
   <% end %>
